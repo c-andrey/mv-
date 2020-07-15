@@ -68,7 +68,8 @@
   ],
   "exclude": [
     "node_modules",
-    ".vscode"
+    ".vscode",
+    "src/__tests__"
   ]
 
 }

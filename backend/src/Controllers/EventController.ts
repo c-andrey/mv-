@@ -43,7 +43,7 @@ export default {
 
       res.status(201).json(event);
     } catch (err) {
-      res.status(404).send('Não foi possível criar o evento');
+      res.status(404).send(`Não foi possível criar o evento, erro: ${err}`);
     }
   },
 

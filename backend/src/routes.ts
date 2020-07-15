@@ -1,8 +1,11 @@
-import express from 'express';
+import { Request, Response, Router } from 'express';
 import EventController from './Controllers/EventController';
 
-const routes = express.Router();
+const routes = Router();
 
+routes.get('/', (_req: Request, res: Response): any => {
+  res.status(200).send('Teste');
+});
 routes.get('/events', EventController.index);
 routes.get('/events/:id', EventController.show);
 routes.post('/events', EventController.store);
